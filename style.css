@@ -131,9 +131,18 @@ button {
     font-family: 'Lato';
 }
 
+.fa-swing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 1rem;
+}
 .contact-button {
     margin-right: 12px;
     font-size: 1.2rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
 }
 
 .icon-message {
@@ -298,14 +307,21 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    min-height: 100px;
+    min-height: 650px;
 }
 
 .fourth-section p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
     color: #ccc;
+}
+
+.fa-float {
+  font-size: 32px;       /* Controla o tamanho do ícone */
+  color: #fff;       
+  transition: transform 0.2s ease, color 0.2s ease; /* Transição suave para efeitos */
 }
 
 footer {
@@ -531,4 +547,43 @@ footer>div {
         align-items: center;
         gap: 2rem;
     }
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.footer-icons {
+    display: flex;
+    margin-left: 23rem;
+    gap: 1rem;
+}
+ 
+.footer-email{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+}
+
+.footer-container  p{
+    font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #ccc;
+}
+.footer-container  p:hover{
+    color: var(--white);
+    transition: color 0.2s;
+}
+.footer-copy {
+    display: flex;
+}
+
+.copy-text{
+    color: #ccc;
+    font-size: 0.85rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-style: italic;
 }
