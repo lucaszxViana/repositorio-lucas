@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --dark1: #080D19;
+    --dark2: #0B1120;
+    --dark3: #111C30;
+    --dark4: #18263D;
+    --dark5: #93C5FD;
+    --cyan1: #38BDF8;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background-color: var(--dark1);
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    color: var(--white);
+}
+
+/* ========================================================
+   ESTILOS BASE / DESKTOP (PC & NOTEBOOK)
+   100% FIÉIS AO VISUAL E REGRAS ORIGINAIS
+   ======================================================== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark3);
+    padding: .8rem 4rem;
+    flex-wrap: wrap;
+    min-height: 50px;
+}
+
+.box-img-main {
+    height: 100%;
+}
+
+.img-profile {
+    height: 100%;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-lucas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.box-lv {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(100deg, #3498db, #4f46e5);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.name-lucas {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links {
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: var(--white);
+    transition: color 0.2s;
+}
+
+button {
+    display: flex;
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-family: 'Lato';
+}
+
+.contact-button {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.icon-message {
+    display: flex;
+    margin-right: auto;
+}
+
+.btn-action:hover {
+    background-color: var(--dark5);
+    border: 1px solid var(--white);
+}
+
+/* Elementos do menu mobile ocultos por padrão no Desktop */
+.menu-toggle {
+    display: none;
+}
+
+.mobile-only-contact {
+    display: none;
+}
+
+.desktop-only-contact {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 4rem;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: calc(100vh - 75px);
+}
+
+.first-section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong {
+    color: var(--cyan1);
+}
+
+p {
+    color: var(--white);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.first-section p {
+    max-width: 670px;
+    margin-bottom: 20px;
+}
+
+.link-action {
+    padding: .6rem;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+.link-action:hover {
+    background-color: var(--dark5);
+    border: 1px solid var(--white);
+}
+
+.box-img-main {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second-section {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 200px;
+}
+
+.second-section>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section p {
+    color: var(--white);
+    letter-spacing: 2px;
+    max-width: 90vw;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--dark3);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(241, 242, 245, 0.05);
+    font-size: 1.1rem;
+}
+
+.title {
+    color: var(--dark5);
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100px;
+}
+
+.third-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.third-section ul li {
+    color: #ccc;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.third-section ul li:hover {
+    color: var(--white);
+    cursor: default;
+    transition: .4s;
+}
+
+.fourth-section {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 100px;
+}
+
+.fourth-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    min-height: 300px;
+}
+
+footer>div {
+    display: flex;
+    gap: 2rem;
+}
+
+/* ========================================================
+   RESPONSIVIDADE EXCLUSIVA PARA MOBILE / TABLET (< 768px)
+   (Notebooks e PCs continuam usando 100% das regras acima)
+   ======================================================== */
+@media (max-width: 768px) {
+
+    /* 1. Header & Menu Hamburguer Mobile */
+    header {
+        padding: 0.8rem 1.25rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav.navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px 8px;
+        border-radius: 6px;
+    }
+
+    .hamburger-line {
+        width: 100%;
+        height: 2.5px;
+        background-color: var(--white);
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 0.8rem);
+        left: 0;
+        right: 0;
+        background-color: var(--dark3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        gap: 1.25rem;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-links-container.active {
+        display: flex;
+    }
+
+    .desktop-only-contact {
+        display: none;
+    }
+
+    .mobile-only-contact {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .mobile-only-contact .btn-action {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-only-contact .icon-message {
+        position: absolute;
+        left: 16px;
+        margin: 0;
+    }
+
+    .mobile-only-contact .contact-button {
+        margin: 0;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* 2. Hero Section (Apresentação) Mobile */
+    .first-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        padding: 3rem 1.25rem 2rem;
+        gap: 2rem;
+    }
+
+    .first-section > div {
+        min-width: unset;
+        width: 100%;
+        align-items: center;
+    }
+
+    .box-img-main {
+        max-width: 240px;
+        width: 65%;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .img-profile {
+        height: auto;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 8vw, 2.75rem);
+        letter-spacing: 3px;
+        line-height: 1.2;
+    }
+
+    .first-section p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .link-action {
+        width: 100%;
+        max-width: 220px;
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    /* 3. Seções Gerais e Seção "Quem sou eu" Mobile */
+    section {
+        padding: 3rem 1.25rem;
+    }
+
+    .second-section {
+        padding: 3rem 1.25rem;
+        gap: 1.5rem;
+        min-height: auto;
+    }
+
+    .second-section > div {
+        width: 100%;
+    }
+
+    .second-section p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 1.5rem 1.25rem;
+        font-size: 1.05rem;
+        letter-spacing: 0.3px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    /* 4. Tecnologias, Projetos e Rodapé Mobile */
+    .third-section ul {
+        gap: 1rem 1.5rem;
+    }
+
+    .third-section ul li {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        padding: 4rem 1.25rem calc(4rem + env(safe-area-inset-bottom, 20px));
+        gap: 2.5rem;
+        min-height: 260px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer h2.title {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+
+    footer > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
