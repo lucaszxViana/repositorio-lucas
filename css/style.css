@@ -152,8 +152,8 @@ button {
 }
 
 .btn-action:hover {
-    background-color: var(--dark5);
-    border: 1px solid var(--white);
+    border-color: #0873cf;
+    background: rgba(167, 139, 250, 0.1);
 }
 
 /* Elementos do menu mobile ocultos por padrão no Desktop */
@@ -216,6 +216,23 @@ p {
     margin-bottom: 20px;
 }
 
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.link-secondary{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.link-secondary:hover {
+    border-color: #0873cf;
+    background: rgba(167, 139, 250, 0.1);
+}
+
 .link-action {
     padding: .6rem;
     font-size: 16px;
@@ -229,9 +246,10 @@ p {
     text-align: center;
 }
 
+
 .link-action:hover {
-    background-color: var(--dark5);
-    border: 1px solid var(--white);
+    border-color: #0873cf;  
+    background: rgba(167, 139, 250, 0.1);
 }
 
 .box-img-main {
